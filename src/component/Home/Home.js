@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Bio></Bio>
-            <hr />
+            <hr className='py-10 w-4/5 mx-auto' />
             <Skill></Skill>
         </div>
     );

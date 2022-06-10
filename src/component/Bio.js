@@ -2,7 +2,7 @@ import React from "react";
 
 const Bio = () => {
   return (
-    <div className="md:h-screen container mx-auto">
+    <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="bio">
           <div className="biography">
@@ -30,7 +30,7 @@ const Bio = () => {
         </div>
         <div className="flex justify-center items-center flex-col">
           <div className="hasan-pic-holder"></div>
-          
+
         </div>
         <div className="project text-right">
           <div className="biography">
