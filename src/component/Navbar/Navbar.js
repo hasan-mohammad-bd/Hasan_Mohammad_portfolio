@@ -32,27 +32,25 @@ const Navbar = () => {
               <Link to="/home">Home</Link>
               </li>
               <li>
-              <a href="#skill">Skill</a>
+              <Link to="/about">About</Link>
               </li>
               <li>
-              <a href="#project">Project</a>
+              <Link to="/blogs">Blogs</Link>
               </li>
-              <li>
-              <a href="#contact">Contact</a>
-              </li>
+
             </ul>
           </div>
           <div className="nav hidden md:block">
             <Link to="/home">Home</Link>
-            <a href="#skill">Skill</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <Link to="/about">About</Link>
+            <Link to="/blogs">Blogs</Link>
+
           </div>
           <div className="logo-holder">
             <img className="w-[100px] md:w-[120px]" src={logo} alt="" />
           </div>
           <div>
-            <button className="btn lg:ml-[150px]"><a target="_blank" href="https://drive.google.com/file/d/10Jsns5fVdU2KylzvMhi-W7wMLeCPo3o0/view?usp=sharing">Download Resume</a></button>
+            <button className="btn lg:ml-[70px]"><a target="_blank" href="https://drive.google.com/file/d/10Jsns5fVdU2KylzvMhi-W7wMLeCPo3o0/view?usp=sharing">Download Resume</a></button>
           </div>
         </div>
       </div>
