@@ -35,7 +35,7 @@ const Skill = () => {
         {name: 'JWT Token', img:jwt},
     ]
     return (
-        <div className=''>
+        <div id='skill' className=''>
             <h2 className='text-center my-3 font-samibold text-5xl'>My Advantage</h2>
             <div className='grid grid-cols-2 md:grid-cols-7 gap-3 mt-8'>
             {

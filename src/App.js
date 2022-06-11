@@ -8,6 +8,7 @@ import ProjectDetails from "./component/Home/ProjectDetails";
 import ProjectDetailsMore from "./component/Home/ProjectDetailsMore";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from "./component/Footer";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/:id' element={<ProjectDetailsMore></ProjectDetailsMore>}></Route>
         </Routes>
         <ToastContainer></ToastContainer>
+        <Footer></Footer>
     </div>
   );
 }

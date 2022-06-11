@@ -6,13 +6,13 @@ const MyProject = () => {
     console.log(projects);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/project')
+        fetch('https://radiant-lake-65921.herokuapp.com/project')
         .then(res => res.json())
         .then(data => setProjects(data))
     },[])
     
     return (
-        <div className='container mx-auto'>
+        <div id='project' className='container mx-auto'>
            <h2 className='text-center my-3 font-samibold text-5xl'>My Projects</h2>
            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
             {

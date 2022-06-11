@@ -12,9 +12,9 @@ const Contact = () => {
 
     }
     return (
-<div class="hero min-h-screen bg-base-200 mt-10">
+<div id='contact' className="hero min-h-screen bg-base-200 mt-10">
 
-  <div class="hero-content flex-col lg:flex-row-reverse">
+  <div className="hero-content flex-col lg:flex-row-reverse">
     <img className='w-1/2' src={pic} />
     <div className='md:w-[350px]'>
     <form onSubmit={handleSubmit(onSubmit)}>

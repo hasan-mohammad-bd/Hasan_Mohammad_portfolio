@@ -7,56 +7,52 @@ const Navbar = () => {
     <div className="">
       <div className="container mx-auto py-3">
         <div className="flex justify-between items-center">
-          <div class="dropdown md:hidden">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
+          <div className="dropdown md:hidden">
+            <label tabIndex="0" className="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h7"
                 />
               </svg>
             </label>
             <ul
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              tabIndex="0"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
               <Link to="/home">Home</Link>
               </li>
               <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <a href="#skill">Skill</a>
               </li>
               <li>
-              <Link to="/skills">Skills</Link>
+              <a href="#project">Project</a>
               </li>
               <li>
-              <Link className="blogs" to="/portfolio">
-              Blogs
-            </Link>
+              <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
           <div className="nav hidden md:block">
             <Link to="/home">Home</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/skills">Skills</Link>
-            <Link className="blogs" to="/portfolio">
-              Blogs
-            </Link>
+            <a href="#skill">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
           </div>
           <div className="logo-holder">
             <img className="w-[100px] md:w-[120px]" src={logo} alt="" />
           </div>
           <div>
-            <button className="btn lg:ml-[150px]">Download Resume</button>
+            <button className="btn lg:ml-[150px]"><a target="_blank" href="https://drive.google.com/file/d/10Jsns5fVdU2KylzvMhi-W7wMLeCPo3o0/view?usp=sharing">Download Resume</a></button>
           </div>
         </div>
       </div>
