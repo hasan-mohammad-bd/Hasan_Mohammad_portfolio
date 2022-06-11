@@ -11,7 +11,7 @@
  text-transform:uppercase;
 }
 
-*{
+.different-font h2{
   font-family: 'Amiri', serif;
 }
 
@@ -42,4 +42,8 @@
   width: 300px;
   margin: auto auto;
   border: 10px solid rgb(180, 180, 180);
+}
+
+.rounded-project{
+  border-radius: 15px;
 }

@@ -39,7 +39,7 @@ const Skill = () => {
             <h2 className='text-center my-3 font-samibold text-5xl'>My Advantage</h2>
             <div className='grid grid-cols-2 md:grid-cols-7 gap-3 mt-8'>
             {
-                technologies.map(technology => <TechnologyWeb technology={technology}></TechnologyWeb>)
+                technologies.map(technology => <TechnologyWeb key={technology._id} technology={technology}></TechnologyWeb>)
             }
             </div>
         </div>

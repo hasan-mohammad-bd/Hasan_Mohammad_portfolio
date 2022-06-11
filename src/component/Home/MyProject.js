@@ -12,11 +12,11 @@ const MyProject = () => {
     },[])
     
     return (
-        <div>
-           <h2 className='text-center my-3 font-samibold text-5xl'>My Advantage</h2>
-           <div>
+        <div className='container mx-auto'>
+           <h2 className='text-center my-3 font-samibold text-5xl'>My Projects</h2>
+           <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
             {
-                projects.map(project => <ProjectDetails project={project}></ProjectDetails>)
+                projects.map(project => <ProjectDetails project={project} key={project._id}></ProjectDetails>)
             }
            </div>
         </div>
