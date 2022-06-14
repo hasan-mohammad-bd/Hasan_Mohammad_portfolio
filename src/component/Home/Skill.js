@@ -14,7 +14,7 @@ import firebase from '../../img/Technology/firebase.png'
 import reactQuary from '../../img/Technology/react-quary.png'
 import jwt from '../../img/Technology/jwt.png'
 import TechnologyWeb from './TechnologyWeb';
-//this is what i am waitning for 
+//this is what i  for 
 
 const Skill = () => {
 
