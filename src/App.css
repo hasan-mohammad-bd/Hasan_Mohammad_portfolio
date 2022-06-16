@@ -9,12 +9,28 @@
   background-size: cover;
   height: 25vh;
   border-radius: 15px;
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
 }
+
+.pro-pic{
+  background-image: url(../src/img/HasanLinkdin.png);
+  height: 150px;
+  width: 150px;
+
+  background-position: center;
+  background-size: 110%;
+  border-radius: 50%;
+}
+
+
+
+/* Utility */
 
 .br-15{
   border-radius: 15px;
 }
+
+
 
 
 .different-font h2{
