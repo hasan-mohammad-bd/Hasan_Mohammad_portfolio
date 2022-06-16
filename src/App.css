@@ -19,7 +19,7 @@
 }
 
 .profile-card{
-  background: rgba(255, 255, 255, 0.055);
+  background: hsl(0, 0%, 100% / 0.1);
   backdrop-filter: blur(2rem);
   height: 45vh;
 }
@@ -40,6 +40,11 @@
 
 .br-15{
   border-radius: 15px;
+}
+
+.bb{
+  background: hsl(0, 0%, 100% / 0.1);
+  backdrop-filter: blur(2rem);
 }
 
 
