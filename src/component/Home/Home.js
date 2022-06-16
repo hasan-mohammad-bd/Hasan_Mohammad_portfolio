@@ -1,15 +1,17 @@
 import React from 'react';
+import Body from './Body';
 
 
 
 import MyProject from './MyProject';
+import ShowCase from './ShowCase';
 import Skill from './Skill';
 
 const Home = () => {
     return (
         <div>
-
-            <hr className='py-10 w-4/5 mx-auto' />
+            <ShowCase></ShowCase>
+            <Body></Body>
             <Skill></Skill>
             <hr className='py-10 w-4/5 mx-auto' />
             <MyProject></MyProject>

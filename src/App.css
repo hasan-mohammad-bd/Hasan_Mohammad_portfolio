@@ -3,13 +3,19 @@
 
 
 
-.nav a {
- margin-right: 30px;
- font-family: 'Poppins', sans-serif;
- font-weight: 600;
- font-size: 16px;
- text-transform:uppercase;
+.show-case{
+  background-image: url(../src/img/cover-pic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+  border-radius: 15px;
+  margin-top: 1.2rem;
 }
+
+.br-15{
+  border-radius: 15px;
+}
+
 
 .different-font h2{
   font-family: 'Amiri', serif;
