@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./component/Home/Home";
 import PageNotFound from "./component/PageNotFound";
-import Navbar from './component/Navbar/Navbar';
 import ProjectDetails from "./component/Home/ProjectDetails";
 import ProjectDetailsMore from "./component/Home/ProjectDetailsMore";
 import { ToastContainer, toast } from 'react-toastify';
