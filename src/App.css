@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@500&family=Poppins:wght@400;600&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 
+.App{
+  background-image: url(../src/img/cover-pic3.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+}
 
 
 .show-case{
@@ -9,11 +15,11 @@
   background-size: cover;
   height: 25vh;
   border-radius: 15px;
-  margin-top: 1.5rem;
+
 }
 
 .profile-card{
-  background: rgba(0, 34, 20, 0.493);
+  background: rgba(255, 255, 255, 0.055);
   backdrop-filter: blur(2rem);
   height: 45vh;
 }

@@ -9,7 +9,7 @@ import Skill from './Skill';
 
 const Home = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <ShowCase></ShowCase>
             <Body></Body>
             <Skill></Skill>
