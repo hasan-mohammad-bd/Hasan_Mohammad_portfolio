@@ -12,6 +12,12 @@
   margin-top: 1.5rem;
 }
 
+.profile-card{
+  background: rgba(0, 34, 20, 0.493);
+  backdrop-filter: blur(2rem);
+  height: 45vh;
+}
+
 .pro-pic{
   background-image: url(../src/img/HasanLinkdin.png);
   height: 150px;
