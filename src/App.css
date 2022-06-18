@@ -19,7 +19,7 @@
 }
 
 .profile-card{
-  background: hsl(0, 0%, 100% / 0.1);
+  background: hsl(0, 0%, 2% / 0.1);
   backdrop-filter: blur(2rem);
   height: 45vh;
 }
