@@ -15,7 +15,8 @@ import Blogs from "./component/Blogs";
 function App() {
   return (
     <div className="App">
-        <Routes>
+      <div className="black-back">
+      <Routes>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
@@ -25,6 +26,7 @@ function App() {
         </Routes>
         <ToastContainer></ToastContainer>
         <Footer></Footer>
+      </div>
     </div>
   );
 }
