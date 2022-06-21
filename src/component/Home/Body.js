@@ -6,7 +6,7 @@ const Body = () => {
   return (
     <div className="flex flex-col md:flex-row body">
       <div className="profile md:w-1/4 border br-15"><Profile></Profile></div>
-      <div className="body md:w-3/4 border br-15"><BodyDeails></BodyDeails></div>
+      <div className="body md:w-3/4 border br-15 bb"><BodyDeails></BodyDeails></div>
     </div>
   );
 };
