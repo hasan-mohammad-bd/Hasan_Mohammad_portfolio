@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from "./component/Footer";
 import About from "./component/About";
 import Blogs from "./component/Blogs";
+import CoverLetter from "./component/CoverLetter";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/:id' element={<ProjectDetailsMore></ProjectDetailsMore>}></Route>
           <Route path='/about' element={<About></About>}></Route>
           <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+          <Route path='/cover' element={<CoverLetter></CoverLetter>}></Route>
         </Routes>
         <ToastContainer></ToastContainer>
         <Footer></Footer>
