@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const Drower = () => {
   return (
-    <div class="drawer drawer-end fixed z-40 top-[75px]">
+    <div class="drawer drawer-end fixed z-40 top-[0px]">
       <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content"></div>
-      <div class="drawer-side w-[250px]">
-        <label for="my-drawer-4" class="drawer-overlay bb drower-ul"></label>
-        <ul class="menu p-4 overflow-y-auto w-80 text-base-content ">
+      <div class="drawer-side">
+        <label for="my-drawer-4" class="drawer-overlay"></label>
+        <ul class="menu p-4 overflow-y-auto w-80 text-base-content bb pt-32">
           <li>
             <NavLink for="my-drawer-4" to="/home">
               Home

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../img/hasan-logo2.png";
 
 const Header = () => {
-    const [menu, setMenu] = useState(false);
+    const [menu, setMenu] = useState(true);
 
 
   return (
@@ -12,7 +12,7 @@ const Header = () => {
       <div className="nav-body max-w-[800px] mx-auto bbb p-2 flex items-center justify-between">
         <div className="flex items-center nav-items1">
           <div className="logo-holder">
-            <img className="w-10" src={logo} alt="" />
+            <img className="w-10 App-logo" src={logo} alt="" />
           </div>
           <NavLink className="hidden md:block" to="/home">
             Home
