@@ -8,6 +8,10 @@
   background-position: center;
 }
 
+.nav-items1 div,a{
+  margin-right: 24px;
+}
+
 .black-back{
   background-color: rgba(58, 58, 58, 0.397);
 }

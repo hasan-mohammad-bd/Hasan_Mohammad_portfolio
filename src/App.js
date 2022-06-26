@@ -11,13 +11,16 @@ import Footer from "./component/Footer";
 import About from "./component/About";
 import Blogs from "./component/Blogs";
 import CoverLetter from "./component/CoverLetter";
+import Header from "./component/Header";
 
 
 function App() {
   return (
     <div className="App">
       <div className="black-back">
+      <Header></Header>
       <Routes>
+
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/home' element={<Home></Home>}></Route>
           <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
