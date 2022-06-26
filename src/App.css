@@ -8,8 +8,38 @@
   background-position: center;
 }
 
+.nav{
+  position: sticky;
+  top:12px;
+  bottom: 10px;
+  z-index: 999;
+}
+
+.nav-body{
+  border-radius: 35px;
+}
+
 .nav-items1 div,a{
   margin-right: 24px;
+  color: rgb(156, 156, 156);
+  font-weight: 600;
+  transition: color 0.3s ease-in;
+}
+
+.nav-items1 a:hover {
+  color: white;
+}
+
+.drower-ul{
+  border-radius: 20px;
+}
+
+.btn1 {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #000000;
+  color: rgb(156, 156, 156);
+  font-weight: 600;
 }
 
 .black-back{
@@ -55,6 +85,10 @@
   backdrop-filter: blur(2rem);
 }
 
+.bbb{
+  background: #121316c5;
+  backdrop-filter: blur(1rem);
+}
 
 
 
@@ -65,7 +99,7 @@
 .small-heading{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: grey;
+  color: rgb(156, 156, 156);
 }
 
 .pro-img-holder{
