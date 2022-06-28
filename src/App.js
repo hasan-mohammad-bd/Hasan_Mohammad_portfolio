@@ -7,20 +7,27 @@ import ProjectDetails from "./component/Home/ProjectDetails";
 import ProjectDetailsMore from "./component/Home/ProjectDetailsMore";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from "./component/Footer";
+
 import About from "./component/About";
 import Blogs from "./component/Blogs";
 import CoverLetter from "./component/CoverLetter";
 import Header from "./component/Header";
 import Drower from "./component/Drower";
+import React, { Suspense } from 'react';
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 
 function App() {
   return (
     <div className="App">
-      <div className="black-back">
+            <Suspense fallback={<div>Loading...</div>}>
+        <Spline scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
+      </Suspense>
+    <div>
+
+
       <Header></Header>
-      <Drower></Drower>
       <Routes>
 
           <Route path='/' element={<Home></Home>}></Route>
@@ -32,7 +39,7 @@ function App() {
           <Route path='/cover' element={<CoverLetter></CoverLetter>}></Route>
         </Routes>
         <ToastContainer></ToastContainer>
-        <Footer></Footer>
+
       </div>
     </div>
   );
