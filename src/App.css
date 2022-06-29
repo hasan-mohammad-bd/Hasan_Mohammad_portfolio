@@ -1,11 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@700&family=Spline+Sans:wght@400;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@500&family=Poppins:wght@400;600&family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
 
 .App{
   background-image: url(../src/img/cover-pic3.jpg);
   background-attachment: fixed;
   background-size: 100%;
   background-position: center;
+}
+
+.show-case{
+  background-color: #17102F;
+  font-family:'Spline Sans', sans-serif;
+  font-size: 36px;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  margin-top: -60px;
+  
+}
+
+.spline{
+  position: absolute;
+  margin: 0;
+  top: 0px;
+  right: 0;
 }
 
 .nav{
@@ -62,14 +81,7 @@
 }
 
 
-.show-case{
 
-  background-position: center;
-  background-size: cover;
-  height: 25vh;
-  border-radius: 15px;
-
-}
 
 .profile-card{
   background: hsl(0, 0%, 2% / 0.1);

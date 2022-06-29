@@ -9,7 +9,7 @@ import ShowCase from './ShowCase';
 
 const Home = () => {
     return (
-        <div className="container mx-auto">
+        <div className="">
             <ShowCase></ShowCase>
             <Body></Body>
             <hr className='py-10 w-4/5 mx-auto' />

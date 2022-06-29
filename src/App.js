@@ -13,17 +13,13 @@ import Blogs from "./component/Blogs";
 import CoverLetter from "./component/CoverLetter";
 import Header from "./component/Header";
 import Drower from "./component/Drower";
-import React, { Suspense } from 'react';
 
-const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 
 function App() {
   return (
     <div className="App">
-            <Suspense fallback={<div>Loading...</div>}>
-        <Spline scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
-      </Suspense>
+
     <div>
 
 
