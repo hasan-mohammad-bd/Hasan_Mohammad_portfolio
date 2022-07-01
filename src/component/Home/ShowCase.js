@@ -1,13 +1,15 @@
 import Spline from "@splinetool/react-spline";
-import React, { Suspense } from "react";
+import React from "react";
 
 
 
 const ShowCase = () => {
   return (
-    <div className="mt-[-60px] show-case h-screen">
+    <div className="show-case">
 
-        <Spline className="w-100 spline" scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
+        <div className="spline-container">
+        <Spline className="spline" scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
+        </div>
 
     </div>
   );
