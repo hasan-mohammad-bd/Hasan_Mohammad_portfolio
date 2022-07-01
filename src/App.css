@@ -301,9 +301,9 @@ span {
 
 .story {
   position: absolute;
-  top: 45%;
+  top: 100%;
   left: 0%;
-  height: 55%;
+  height: 25%;
   width: 100%;
   background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
   z-index: 30;

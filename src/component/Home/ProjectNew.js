@@ -15,6 +15,7 @@ const ProjectNew = ({ project }) => {
             <div class="info">
               <h3>{name}</h3>
               <p>{Description}</p>
+              <button className="btn1 mx-auto text-center">Details</button>
             </div>
           </div>
         </div>
