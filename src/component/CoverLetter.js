@@ -84,7 +84,7 @@ const CoverLetter = () => {
         </form>
       </div>
       <h2 className="text-3xl font-bold my-5">Cover Letter</h2>
-      <p>
+      <p className='bg-black'>
         I am pleased to be applying for the {position} position at {companyName} as
         posted on {jobPostPlatform}.
         <br />

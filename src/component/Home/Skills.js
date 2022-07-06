@@ -4,7 +4,7 @@ import React from 'react';
 const Skills = () => {
     return (
         <div className='h-screen'>
-            <Spline scene="https://prod.spline.design/c2K-JDrQ4Zbo27w2/scene.splinecode" />
+            <Spline classN scene="https://prod.spline.design/ZRTdbXoRvgnlFxoW/scene.splinecode" />
         </div>
     );
 };

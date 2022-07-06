@@ -5,10 +5,13 @@ import React from "react";
 
 const ShowCase = () => {
   return (
-    <div className="show-case">
+    <div className="show-case flex">
+      <div>
+        <h1>I'm a professional web developer </h1>
+      </div>
 
         <div className="spline-container">
-        <Spline className="spline" scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode" />
         </div>
 
     </div>
