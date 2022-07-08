@@ -26,7 +26,7 @@ const CoverLetter = () => {
   }
 
   return (
-    <div className=" h-screen bg-white flex justify-center items-center flex-col container mx-auto">
+    <div className=" h-screen bg-white flex justify-center  flex-col container mx-auto">
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
         <input
@@ -84,7 +84,8 @@ const CoverLetter = () => {
         </form>
       </div>
       <h2 className="text-3xl font-bold my-5">Cover Letter</h2>
-      <p className='bg-black'>
+      <p className='text-black text-xs text-left'>
+        Dear Hiring Team, <br />
         I am pleased to be applying for the {position} position at {companyName} as
         posted on {jobPostPlatform}.
         <br />
@@ -97,6 +98,12 @@ const CoverLetter = () => {
         Your {companyAchivement} really motivate me and I feel my competence in teamwork, technical communication, and problem-solving would be a great benefit to the {companyName}.
         <br />
         <br />I would be grateful to you for the time to review my application. Please find my resume attached. I look forward to hearing from you soon.
+        <br />
+        <br />
+        Best Regards, <br />
+        Hasan Mohammad <br />
+        Phone: +8801688861610 <br />
+        Email: hasan.md.east@gmail.com
       </p>
     </div>
   );
