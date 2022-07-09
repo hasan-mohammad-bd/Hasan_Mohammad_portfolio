@@ -13,7 +13,12 @@ const CoverLetter = () => {
   const [softSkill, setSoftSkill] = useState("______");
   const [side, setSide] = useState("______");
   const [productToMake, setProductMake] = useState("______");
-  const [value, setValue] = useState("");
+  const linkedin = "https://www.linkedin.com/in/hasan19947/";
+  const gitHub = "https://github.com/hasan-mohammad-bd";
+  const prosonalPortfolio = "https://hasan-mohammad.web.app/";
+  const cloudia = "https://manufacturer-app-dff29.web.app/";
+  const dhakaBakery = "https://inventory-app-6da6a.web.app/";
+  const photographyApp = "https://photography-web-app-58ab5.web.app/";
 
 
 
