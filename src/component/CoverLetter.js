@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const CoverLetter = () => {
   const { register, handleSubmit,reset } = useForm();
@@ -12,6 +13,7 @@ const CoverLetter = () => {
   const [softSkill, setSoftSkill] = useState("______");
   const [side, setSide] = useState("______");
   const [productToMake, setProductMake] = useState("______");
+  const [value, setValue] = useState('');
 
   const onSubmit = data => {
     setCompanyName(data.companyName);
@@ -84,7 +86,7 @@ const CoverLetter = () => {
         </form>
       </div>
       <h2 className="text-3xl font-bold my-5">Cover Letter</h2>
-      <p className='text-black text-xs text-left'>
+          {setValue(<p className='text-black text-xs text-left'>
         Dear Hiring Team, <br />
         I am pleased to be applying for the {position} position at {companyName} as
         posted on {jobPostPlatform}.
@@ -104,7 +106,7 @@ const CoverLetter = () => {
         Hasan Mohammad <br />
         Phone: +8801688861610 <br />
         Email: hasan.md.east@gmail.com
-      </p>
+      </p>)}
     </div>
   );
 };
