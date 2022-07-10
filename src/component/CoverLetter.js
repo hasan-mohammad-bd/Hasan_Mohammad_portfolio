@@ -35,7 +35,7 @@ const CoverLetter = () => {
   };
 
   return (
-    <div className=" h-screen bg-white flex justify-center  flex-col container mx-auto">
+    <div className=" h-screen bg-white flex justify-center  flex-col px-10 pt-[500px] md:pt-[100px] mt-[-80px]">
       <div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
@@ -112,7 +112,7 @@ const CoverLetter = () => {
               <button className="btn btn-primary ml-3">Copy Falcon</button>
             </CopyToClipboard>
           </div>
-      <h2 className="text-3xl font-bold my-5">Cover Letter</h2>
+      <h2 className="text-3xl font-bold my-5 text-center">Cover Letter</h2>
       <div id="text">
 
         <p className="text-black text-xs text-left">
