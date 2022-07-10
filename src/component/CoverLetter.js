@@ -92,7 +92,26 @@ const CoverLetter = () => {
           />
         </form>
       </div>
-      <h2>Linkedin: https://www.linkedin.com/in/hasan19947/</h2>
+          <div className="copy">
+            <CopyToClipboard text={linkedin}>
+              <button className="btn btn-primary">Copy Linkedin</button>
+            </CopyToClipboard>
+            <CopyToClipboard text={gitHub}>
+              <button className="btn btn-primary ml-3">Copy GitHub</button>
+            </CopyToClipboard>
+            <CopyToClipboard text={prosonalPortfolio}>
+              <button className="btn btn-primary ml-3">Copy Portfolio</button>
+            </CopyToClipboard>
+            <CopyToClipboard text={cloudia}>
+              <button className="btn btn-primary ml-3">Copy Cloudia</button>
+            </CopyToClipboard>
+            <CopyToClipboard text={dhakaBakery}>
+              <button className="btn btn-primary ml-3">Copy DhakaBakery</button>
+            </CopyToClipboard>
+            <CopyToClipboard text={photographyApp}>
+              <button className="btn btn-primary ml-3">Copy Falcon</button>
+            </CopyToClipboard>
+          </div>
       <h2 className="text-3xl font-bold my-5">Cover Letter</h2>
       <div id="text">
 
