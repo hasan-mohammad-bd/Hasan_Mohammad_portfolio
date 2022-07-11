@@ -9,6 +9,7 @@
   font-weight: 600;
 }
 
+
 .hasan{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -27,7 +28,6 @@
 
   font-family:'Spline Sans', sans-serif;
   margin-top: -60px;
-  height: 105vh;
   
 }
 
@@ -417,5 +417,16 @@ li:nth-child(2) {
   }
   100% {
     top: 0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .spline {
+    transform: scale(0.7);
+
+  }
+  .spline1 {
+    transform: scale(0.7);
+    transform-origin: -15% 40%;
   }
 }

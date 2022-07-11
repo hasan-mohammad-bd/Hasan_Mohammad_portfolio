@@ -23,7 +23,7 @@ const ShowCase = () => {
       </div>
       <div className="spline-container">
         <Spline
-          className=""
+          className="spline1 w-100"
           scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode"
         />
       </div>
