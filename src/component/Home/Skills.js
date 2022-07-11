@@ -1,14 +1,19 @@
-import Spline from '@splinetool/react-spline';
-import React from 'react';
+import Spline from "@splinetool/react-spline";
+import React from "react";
+import skills from "../../img/skillSet.png";
 
 const Skills = () => {
-    return (
-        <div className='h-screen'>
-            <Spline classN scene="https://prod.spline.design/ZRTdbXoRvgnlFxoW/scene.splinecode" />
-        </div>
-    );
+  return (
+    <div className="h-screen flex justify-center items-center mt-[110px]">
+      <Spline
+        className="spline"
+        scene="https://prod.spline.design/ZRTdbXoRvgnlFxoW/scene.splinecode"
+      />
+      <div className="img-holder mr-5">
+        <img className="w-100" src={skills} alt="" />
+      </div>
+    </div>
+  );
 };
 
 export default Skills;
-
-
