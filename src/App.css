@@ -10,21 +10,14 @@
 }
 
 .show-case{
-  background-color: #1E1E1E;
-  font-family:'Spline Sans', sans-serif;
-  font-size: 36px;
-  color: white;
-  margin: 0 auto;
 
+  font-family:'Spline Sans', sans-serif;
   margin-top: -60px;
   height: 105vh;
   
 }
 
-.spline{
-  height: 100%;
-  width: 100%;
-}
+
 
 .nav{
   position: sticky;
