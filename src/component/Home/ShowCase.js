@@ -32,7 +32,7 @@ const ShowCase = () => {
             development tools and technology.
           </h6>
           <div className="mt-10 flex items-center">
-            <div className="img-holder w-[150px]">
+            <div className="img-holder w-[130px]">
               <img className="w-100 avatar" src={hasan} alt="" />
             </div>
             <div>
@@ -51,7 +51,7 @@ const ShowCase = () => {
       </div>
       <div className="spline-container">
         <Spline
-          className="spline1 w-100"
+          className="spline1"
           scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode"
         />
       </div>

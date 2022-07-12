@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import ProjectDetails from "./ProjectDetails";
 import ProjectNew from "./ProjectNew";
 import arrow3 from "../../img/Asset 2@4x.png";
+import arrow4 from "../../img/Asset 5@4x.png";
+import arrow5 from "../../img/Asset 6@4x.png";
 
 const MyProject = () => {
   const [projects, setProjects] = useState([]);
@@ -24,6 +26,8 @@ const MyProject = () => {
       </h2>
       <div className="w-[100px] mx-auto relative">
         <img className="absolute left-10" src={arrow3} alt="" />
+        <img className="absolute top-16 left-[150px]" src={arrow4} alt="" />
+        <img className="absolute top-16 right-[200px]" src={arrow5} alt="" />
         <img
           className="absolute arrow-mirror top-16 right-20"
           src={arrow3}

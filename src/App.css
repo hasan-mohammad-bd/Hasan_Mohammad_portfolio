@@ -21,6 +21,10 @@
 
 }
 
+.spline-container{
+  overflow: hidden;
+}
+
 .flash{
   transform: rotate(20deg);
 }
@@ -438,9 +442,17 @@ li:nth-child(2) {
   }
 }
 
+.spline1 {
+
+  transform-origin: -35% 40%;
+
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .spline {
-    transform: scale(0.7);
+    transform: scale(0.6);
 
   }
   .spline1 {
