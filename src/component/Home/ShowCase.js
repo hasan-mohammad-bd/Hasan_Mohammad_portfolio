@@ -4,15 +4,23 @@ import hasan from "../../img/hasanWeb2.png";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram";
+import arrow1 from "../../img/Asset 1.png";
+import arrow2 from "../../img/Asset 3@4x.png";
+
 
 const ShowCase = () => {
   return (
     <div className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
       <div className="w-100 h-screen flex items-center md:w-[550px] md:mt-16 z-10">
         <div className="">
+          <div className="flex items-center justify-start">
           <h6 className="hello md:text-[60px] text-3xl text-[#ffe600] static mr-[100px]">
             Hello,
           </h6>
+          <div className="ml-[-80px] ">
+            <img className="mb-[-30px]" src={arrow1} alt="" />
+          </div>
+          </div>
           <h6 className="text-white hasan text-5xl md:text-[90px] mt-6 md:mt-12 md:w-[550px]">
             I am Hasan.
           </h6>
@@ -35,7 +43,9 @@ const ShowCase = () => {
                   <a className=" text-3xl text-pink-500"  href="https://www.instagram.com/hasan_mohammad_7/" target="_blank"><AiOutlineInstagram className="inline-block" /></a>
 
               </div>
+              
             </div>
+            <div className="ml-5"><img className="flash" src={arrow2} alt="" /></div>
           </div>
         </div>
       </div>

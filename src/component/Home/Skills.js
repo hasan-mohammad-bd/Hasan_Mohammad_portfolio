@@ -1,6 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import React from "react";
-import skills from "../../img/skillSet.png";
+import skills from "../../img/skillset2.png";
 
 const Skills = () => {
   return (

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Shadows+Into+Light&display=swap');
 
-.hello{
+.hello, .projectText{
   font-family: 'Shadows Into Light', cursive;
 }
 
@@ -9,12 +9,20 @@
   font-weight: 600;
 }
 
+.arrow-mirror{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .avatar{
   border-radius: 50%;
 
   box-sizing:border-box;
   border: 5px solid white;
 
+}
+
+.flash{
+  transform: rotate(20deg);
 }
 
 .mohammad{
