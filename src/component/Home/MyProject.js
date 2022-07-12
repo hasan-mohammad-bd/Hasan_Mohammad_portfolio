@@ -13,7 +13,7 @@ const MyProject = () => {
     },[])
     
     return (
-        <div id='project1' className='h-screen mx-auto'>
+        <div id='project1' className='mx-auto'>
            <h2 className='text-center my-3 font-samibold text-5xl'>My Projects</h2>
            <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
             {

@@ -4,7 +4,7 @@ import skills from "../../img/skillSet.png";
 
 const Skills = () => {
   return (
-    <div className="h-screen flex justify-center items-center mt-[110px]">
+    <div className="flex flex-col md:flex-row items-center justify-between container mx-auto">
       <Spline
         className="spline"
         scene="https://prod.spline.design/ZRTdbXoRvgnlFxoW/scene.splinecode"

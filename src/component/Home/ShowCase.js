@@ -1,5 +1,6 @@
 import Spline from "@splinetool/react-spline";
 import React from "react";
+import hasan from "../../img/hasanWeb.png"
 
 const ShowCase = () => {
   return (
@@ -19,6 +20,9 @@ const ShowCase = () => {
             A motivated individual with in-depth knowledge of full-stack web development
             tools and technology.
           </h6>
+          <div className="mt-10">
+              <div className="img-holder w-[150px]"><img className="w-100 avatar" src={hasan} alt="" /></div>
+          </div>
         </div>
       </div>
       <div className="spline-container">
