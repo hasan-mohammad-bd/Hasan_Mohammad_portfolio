@@ -8,7 +8,7 @@ const ProjectNew = ({ project }) => {
         <div class="container1" id="c0">
           <div class="image" id="i0">
             <div class="city">
-              <img className="w-100" src={img} alt="" />
+              <img className="w-100" title="click for details" src={img} alt="" />
             </div>
           </div>
           <div class="story" id="s0">

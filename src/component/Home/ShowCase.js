@@ -6,9 +6,14 @@ import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram";
 import arrow1 from "../../img/Asset 1.png";
 import arrow2 from "../../img/Asset 3@4x.png";
+import { useState } from "react";
+import { useEffect } from "react";
 
 
 const ShowCase = () => {
+  const [loading, setLoading] = useState(false);
+
+
   return (
     <div className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
       <div className="w-100 h-screen flex items-center md:w-[550px] md:mt-16 z-10">
