@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/hasan-logo2.png";
+import { AiOutlineDownload } from "@react-icons/all-files/ai/AiOutlineDownload";
 
 const Header = () => {
     const [menu, setMenu] = useState(true);
@@ -25,7 +26,7 @@ const Header = () => {
           </NavLink>
         </div>
         <button className="btn1 bg-blue-700 hidden mr-1 md:block">
-          Download Resume
+          <AiOutlineDownload className="inline-block text-xl"/> Resume
         </button>
         <label onClick={()=>{setMenu(!menu)}} for="my-drawer-4" class="mr-3 text-gray-400 md:hidden">
             {menu?           <svg

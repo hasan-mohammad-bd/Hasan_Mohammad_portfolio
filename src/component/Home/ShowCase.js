@@ -1,11 +1,14 @@
 import Spline from "@splinetool/react-spline";
 import React from "react";
-import hasan from "../../img/hasanWeb.png"
+import hasan from "../../img/hasanWeb2.png";
+import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
+import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
+import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram";
 
 const ShowCase = () => {
   return (
     <div className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
-      <div className="w-100 h-screen flex items-center md:w-[550px] justify-center z-10">
+      <div className="w-100 h-screen flex items-center md:w-[550px] md:mt-16 z-10">
         <div className="">
           <h6 className="hello md:text-[60px] text-3xl text-[#ffe600] static mr-[100px]">
             Hello,
@@ -17,11 +20,22 @@ const ShowCase = () => {
             A Full-Stack Web Developer
           </h6>
           <h6 className="text-white text-xl text-left">
-            A motivated individual with in-depth knowledge of full-stack web development
-            tools and technology.
+            A motivated individual with in-depth knowledge of full-stack web
+            development tools and technology.
           </h6>
-          <div className="mt-10">
-              <div className="img-holder w-[150px]"><img className="w-100 avatar" src={hasan} alt="" /></div>
+          <div className="mt-10 flex items-center">
+            <div className="img-holder w-[150px]">
+              <img className="w-100 avatar" src={hasan} alt="" />
+            </div>
+            <div>
+              <h6 className="text-4xl ml-3 mohammad">Hasan Mohammad</h6>
+              <div className="mt-2 flex">
+                  <a className=" text-3xl ml-3 text-white" href="https://github.com/hasan-mohammad-bd" target="_blank"><AiFillGithub className="inline-block"/></a>
+                  <a className=" text-3xl text-blue-500" href="https://www.linkedin.com/in/hasan19947/" target="_blank"><AiFillLinkedin className="inline-block"/></a>
+                  <a className=" text-3xl text-pink-500"  href="https://www.instagram.com/hasan_mohammad_7/" target="_blank"><AiOutlineInstagram className="inline-block" /></a>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
