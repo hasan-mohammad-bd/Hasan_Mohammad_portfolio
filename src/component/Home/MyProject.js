@@ -12,8 +12,8 @@ const MyProject = () => {
 
   useEffect(() => {
     fetch("https://radiant-lake-65921.herokuapp.com/project")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
+      .then(res => res.json())
+      .then(data => setProjects(data));
   }, []);
 
   return (
