@@ -3,6 +3,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/hasan-logo2.png";
 import { AiOutlineDownload } from "@react-icons/all-files/ai/AiOutlineDownload";
+import resume from "../img/hasan Mohammad_resume (1).png";
+import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v2 (3).pdf";
 
 const Header = () => {
     const [menu, setMenu] = useState(true);
@@ -25,8 +27,8 @@ const Header = () => {
             About
           </NavLink>
         </div>
-        <button className="btn1 bg-blue-700 hidden mr-1 md:block">
-          <AiOutlineDownload className="inline-block text-xl"/> Resume
+        <button className="btn1 bg-blue-700 hidden mr-1 md:block"><label for="my-modal-5" class=""><AiOutlineDownload className="inline-block text-xl"/> Resume</label>
+          
         </button>
         <label onClick={()=>{setMenu(!menu)}} for="my-drawer-4" class="mr-3 text-gray-400 md:hidden">
             {menu?           <svg
@@ -44,6 +46,18 @@ const Header = () => {
           </svg> : <label for="my-modal-3" class="ml-3">✕</label>}
         </label>
       </div>
+
+
+<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box max-w-2xl">
+  <label for="my-modal-5" class="btn btn-sm btn-circle sticky right-2 top-2 bb">✕</label>
+    <img src={resume} alt="" />
+    <div class="modal-action bg-fixed">
+      <a className="btn1 mx-auto mt-[-10px]" href={resumePDF} download><AiOutlineDownload className="inline-block text-xl"/> Download</a>
+    </div>
+  </div>
+</div>
 
     </div>
   );
