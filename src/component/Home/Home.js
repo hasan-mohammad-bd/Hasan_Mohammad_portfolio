@@ -1,6 +1,7 @@
 import React from 'react';
 import Line from '../Line';
 import Body from './Body';
+import Contact from './Contact';
 import MyProject from './MyProject';
 import ProjectNew from './ProjectNew';
 import ShowCase from './ShowCase';
@@ -14,10 +15,7 @@ const Home = () => {
             <Skills></Skills>
             <MyProject></MyProject>
             <Line></Line>
-
-
-            <h2 className='text-center my-3 md:mt-[150px] font-samibold text-5xl'>Contact</h2>
-            {/* <Contact></Contact> */}
+            <Contact></Contact>
 
         </div>
     );

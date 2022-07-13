@@ -30,7 +30,7 @@ const ProjectModal = ({project2}) => {
               <div className="">
                 <div class="carousel w-full">
                   <div id="slide1" class="carousel-item relative w-full my-5">
-                    <img className="w-100" src={img2} />
+                    <img className="w-full" src={img2} />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                       <a href="#slide3" class="btn btn-sm btn-circle">
                         ❮
