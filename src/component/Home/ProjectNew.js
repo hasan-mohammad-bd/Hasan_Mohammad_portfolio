@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
+import {useQuery } from 'react-query';
+import useFire from "./useFire";
 
 const ProjectNew = ({ project }) => {
-  const [project2, setProject] = useState({});
-  // const {name, img, technology, Description, _id} = project;
-  console.log(project._id);
 
-  useEffect(() => {
-    fetch(`https://radiant-lake-65921.herokuapp.com/project/${project._id}`)
-      .then((res) => res.json())
-      .then((data) => setProject(data));
-  }, []);
+  
+const [project2, refetch] = useFire(project._id);
+
+/*   const { isLoading, error, data:project2,refetch } = useQuery(["project", project._id], () =>
+  fetch(`https://radiant-lake-65921.herokuapp.com/project/${project._id}`).then(res =>
+    res.json()
+  )
+  
+)
+
+if (isLoading) return 'Loading...' */
+
 
   const {
     name,
@@ -38,6 +44,7 @@ const ProjectNew = ({ project }) => {
               <label for="projectModal" class="">
                 <img
                   for="projectModal"
+                  onClick={()=>{refetch()}}
                   className="w-100 cursor-pointer"
                   title="click for details"
                   src={project.img}
@@ -58,6 +65,7 @@ const ProjectNew = ({ project }) => {
       <input type="checkbox" id="projectModal" class="modal-toggle" />
       <div class="modal">
         <div class="modal-box  max-w-3xl">
+        <label for="projectModal" class="btn btn-sm btn-circle sticky right-2 top-2 bb">✕</label>
           <div className="hero-content">
             <div className="md:w-[600px]">
               <div className="">
@@ -65,10 +73,10 @@ const ProjectNew = ({ project }) => {
                   <div id="slide1" class="carousel-item relative w-full my-5">
                     <img className="w-100" src={img2} />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide3" class="btn btn-circle">
+                      <a href="#slide3" class="btn btn-sm btn-circle">
                         ❮
                       </a>
-                      <a href="#slide2" class="btn btn-circle">
+                      <a href="#slide2" class="btn btn-sm btn-circle">
                         ❯
                       </a>
                     </div>
@@ -76,10 +84,10 @@ const ProjectNew = ({ project }) => {
                   <div id="slide2" class="carousel-item relative w-full">
                     <img className="w-100" src={img3} />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide1" class="btn btn-circle">
+                      <a href="#slide1" class="btn btn-sm btn-circle">
                         ❮
                       </a>
-                      <a href="#slide3" class="btn btn-circle">
+                      <a href="#slide3" class="btn btn-sm btn-circle">
                         ❯
                       </a>
                     </div>
@@ -87,10 +95,10 @@ const ProjectNew = ({ project }) => {
                   <div id="slide3" class="carousel-item relative w-full">
                     <img className="w-100" src={img4} />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide2" class="btn btn-circle bb">
+                      <a href="#slide2" class="btn btn-sm btn-circle bb">
                         ❮
                       </a>
-                      <a href="#slide1" class="btn btn-circle bb">
+                      <a href="#slide1" class="btn btn-sm btn-circle bb">
                         ❯
                       </a>
                     </div>
@@ -126,7 +134,6 @@ const ProjectNew = ({ project }) => {
             </div>
           </div>
           <div class="modal-action">
-          <label for="projectModal" title="Close the Tab" class="btn btn-sm btn-circle absolute right-2 top-2 bg-red-600">✕</label>
           </div>
         </div>
       </div>

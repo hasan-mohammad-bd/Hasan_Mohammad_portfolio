@@ -7,6 +7,7 @@ import arrow5 from "../../img/Asset 6@4x.png";
 
 const MyProject = () => {
   const [projects, setProjects] = useState([]);
+  const [project2, setProject2] = useState({});
   console.log(projects);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ const MyProject = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 .span">
         {projects.map((project) => (
-          <ProjectNew project={project} key={project._id}></ProjectNew>
+          <ProjectNew project={project} key={project._id} project2={project2} setProject2={setProject2}></ProjectNew>
         ))}
       </div>
     </div>
