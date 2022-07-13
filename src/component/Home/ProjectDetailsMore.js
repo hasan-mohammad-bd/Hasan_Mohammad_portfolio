@@ -42,6 +42,7 @@ const ProjectDetailsMore = () => {
       </div>
     </div>
   </div>
+
 </div>
     );
 };

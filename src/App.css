@@ -360,15 +360,15 @@ h3 {
 }
 
 h4 {
-  color: #111;
+  color: white;
   position: absolute;
   top: 30%;
   left: 30%;
   letter-spacing: 2px;
 }
 
-h1 {
-  color: #111;
+ h1 {
+  color: white;
   position: fixed;
   top: 0%;
   left: 30%;
@@ -393,19 +393,19 @@ p {
   z-index: 30;
 }
 
-li {
+.span li {
   position: absolute;
   top: 50%;
   list-style: none;
   color: #111;
 }
 
-li:nth-child(1) {
+.span li:nth-child(1) {
   left: 15%;
   animation: simple1 1s linear infinite;
 }
 
-li:nth-child(2) {
+.span li:nth-child(2) {
   right: 15%;
   animation: simple 1s linear infinite;
 }
