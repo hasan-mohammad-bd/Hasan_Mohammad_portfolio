@@ -1,5 +1,5 @@
-import Spline from "@splinetool/react-spline";
-import React from "react";
+
+import React, { Suspense } from "react";
 import hasan from "../../img/hasanWeb2.png";
 import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
@@ -7,7 +7,8 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 import arrow1 from "../../img/Asset 1.png";
 import arrow2 from "../../img/Asset 3@4x.png";
 import { useState } from "react";
-import { useEffect } from "react";
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
+
 
 
 const ShowCase = () => {
@@ -55,10 +56,12 @@ const ShowCase = () => {
         </div>
       </div>
       <div className="spline-container">
+      <Suspense fallback={<div>Loading...</div>}>
         <Spline
           className="spline1"
           scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode"
         />
+        </Suspense>
       </div>
     </div>
   );

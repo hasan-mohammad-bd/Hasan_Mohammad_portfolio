@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import ProjectDetails from "./ProjectDetails";
 import ProjectNew from "./ProjectNew";
 import arrow3 from "../../img/Asset 2@4x.png";
@@ -12,8 +12,8 @@ const MyProject = () => {
 
   useEffect(() => {
     fetch("https://radiant-lake-65921.herokuapp.com/project")
-      .then(res => res.json())
-      .then(data => setProjects(data));
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
   }, []);
 
   return (
@@ -37,7 +37,12 @@ const MyProject = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 .span">
         {projects.map((project) => (
-          <ProjectNew project={project} key={project._id} project2={project2} setProject2={setProject2}></ProjectNew>
+          <ProjectNew
+            project={project}
+            key={project._id}
+            project2={project2}
+            setProject2={setProject2}
+          ></ProjectNew>
         ))}
       </div>
     </div>

@@ -54,7 +54,7 @@ const Header = () => {
   <label for="my-modal-5" class="btn btn-sm btn-circle sticky right-2 top-2 bb">✕</label>
     <img src={resume} alt="" />
     <div class="modal-action bg-fixed">
-      <a className="btn1 mx-auto mt-[-10px]" href={resumePDF} download><AiOutlineDownload className="inline-block text-xl"/> Download</a>
+      <a className="btn1 mx-auto mt-[-10px]"download href={resumePDF}><AiOutlineDownload className="inline-block text-xl"/> Download</a>
     </div>
   </div>
 </div>

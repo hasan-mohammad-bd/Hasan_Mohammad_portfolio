@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import Line from '../Line';
 import Body from './Body';
 import Contact from './Contact';
@@ -6,6 +6,8 @@ import MyProject from './MyProject';
 import ProjectNew from './ProjectNew';
 import ShowCase from './ShowCase';
 import Skills from './Skills';
+const LazyProject = React.lazy(() => import('./MyProject'));
+const LazyContact = React.lazy(()=> import('./Contact'));
 
 
 const Home = () => {
@@ -13,9 +15,12 @@ const Home = () => {
         <div className="">
             <ShowCase></ShowCase>
             <Skills></Skills>
-            <MyProject></MyProject>
+            <Suspense fallback={<div>Loading...</div>}>
+            <LazyProject/>
+
             <Line></Line>
-            <Contact></Contact>
+            <LazyContact/>
+            </Suspense>
 
         </div>
     );
