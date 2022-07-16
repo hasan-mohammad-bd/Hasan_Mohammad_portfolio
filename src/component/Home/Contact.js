@@ -21,7 +21,7 @@ const Contact = () => {
                 <textarea className='border-b-2'></textarea>
             </p>
             <p class="wipeout">
-                <input type="submit" value="Send" />
+                <input className='btn' type="submit" value="Send" />
             </p>
         </div>
     </div>

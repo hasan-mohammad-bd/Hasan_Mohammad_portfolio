@@ -23,7 +23,7 @@ const MyProject = () => {
         <span class="sign__word">recent</span>
       </div>
       <h2 className="my-3 text-white projectText text-5xl text-[#ffe600]">
-        Projects.gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+        Projects.
       </h2>
       <div className="w-[100px] mx-auto relative">
         <img className="absolute left-10" src={arrow3} alt="" />

@@ -8,7 +8,6 @@ import arrow1 from "../../img/Asset 1.png";
 import arrow2 from "../../img/Asset 3@4x.png";
 import { useState } from "react";
 import Loading from '../Loading';
-
 import Spline from "@splinetool/react-spline";
 
 
