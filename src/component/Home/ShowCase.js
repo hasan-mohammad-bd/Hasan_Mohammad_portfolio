@@ -7,19 +7,14 @@ import { AiOutlineInstagram } from "@react-icons/all-files/ai/AiOutlineInstagram
 import arrow1 from "../../img/Asset 1.png";
 import arrow2 from "../../img/Asset 3@4x.png";
 import { useState } from "react";
-import Loading from "../Loading";
+import Loading from '../Loading';
+
 import Spline from "@splinetool/react-spline";
 
 
 
 
 const ShowCase = () => {
-  const [loading, setLoading] = useState(false);
-
-
-
-  
-
 
 
   return (
@@ -64,14 +59,13 @@ const ShowCase = () => {
       </div>
       <div className="spline-container relative">
         <div className="md:h-[800px] md:w-[700px] flex justify-center items-center absolute z-[20]">
-          <div className=""><h6 className="text-5xl">Please Wait</h6></div>
+          <div className=""><Loading></Loading></div>
         </div>
 
       <div className="z-[40]">
       <Spline
           className="spline1 z-[100] relative"
           scene="https://prod.spline.design/GigmP5SlMGNsav1a/scene.splinecode"
-          isLoading={loading}
         />
       </div>
       </div>
