@@ -17,7 +17,7 @@ const MyProject = () => {
   }, []);
 
   return (
-    <div id="project1" className="mx-auto container text-center">
+    <div id="project1" className="mx-auto container text-center mt-6">
       <div class="sign">
         <span class="sign__word">my</span>
         <span class="sign__word">recent</span>
