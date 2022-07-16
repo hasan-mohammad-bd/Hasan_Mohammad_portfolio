@@ -20,12 +20,15 @@ const Header = () => {
           <NavLink className="hidden md:block" to="/home">
             Home
           </NavLink>
-          <NavLink className="hidden md:block" to="/blogs">
-            Blogs
-          </NavLink>
-          <NavLink className="hidden md:block" to="/about">
-            About
-          </NavLink>
+          <a className="hidden md:block" href="#skill">
+            Skills
+          </a>
+          <a className="hidden md:block" href="#project1">
+            Project
+          </a>
+          <a className="hidden md:block" href="#contact">
+            Contact
+          </a>
         </div>
         <button className="btn1 bg-blue-700 hidden mr-1 md:block"><label for="my-modal-5" class=""><AiOutlineDownload className="inline-block text-xl"/> Resume</label>
           

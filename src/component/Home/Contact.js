@@ -3,7 +3,7 @@ import contact from '../../img/contact3.png';
 
 const Contact = () => {
     return (
-        <div className='form1 relative mt-20'>
+        <div id='contact' className='form1 relative mt-20'>
             <img className="absolute z-index" src={contact} alt=""/>
             <div class="shade">
     <div class="blackboard">
