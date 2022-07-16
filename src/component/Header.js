@@ -3,8 +3,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../img/hasan-logo2.png";
 import { AiOutlineDownload } from "@react-icons/all-files/ai/AiOutlineDownload";
-import resume from "../img/hasan Mohammad_resume (1).png";
-import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v2 (3).pdf";
+import resume from "../img/Hasan_Mohammad_Web_Developer_v3 (1).png";
+import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v3.pdf";
 
 const Header = () => {
     const [menu, setMenu] = useState(true);
