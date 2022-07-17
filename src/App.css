@@ -504,7 +504,7 @@ p {
 
 .blackboard {
   position: relative;
-  width: 640px;
+  max-width: 640px;
   margin: 7% auto;
   border: tan solid 12px;
   border-top: #bda27e solid 12px;

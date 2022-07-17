@@ -26,11 +26,11 @@ const MyProject = () => {
         Projects.
       </h2>
       <div className="w-[100px] mx-auto relative">
-        <img className="absolute left-10" src={arrow3} alt="" />
-        <img className="absolute top-16 left-[150px]" src={arrow4} alt="" />
-        <img className="absolute top-16 right-[200px]" src={arrow5} alt="" />
+        <img className="absolute left-10 w-1/2 md:w-100" src={arrow3} alt="" />
+        <img className="absolute top-16 left-[150px] w-1/2 md:w-100" src={arrow4} alt="" />
+        <img className="absolute top-16 right-[200px] w-1/2 md:w-100" src={arrow5} alt="" />
         <img
-          className="absolute arrow-mirror top-16 right-20"
+          className="absolute arrow-mirror top-16 right-20 w-1/2 md:w-100"
           src={arrow3}
           alt=""
         />

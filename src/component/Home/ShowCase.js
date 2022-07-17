@@ -18,7 +18,7 @@ const ShowCase = () => {
 
 
   return (
-    <div className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
+    <div id="home" className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
       <div className="w-100 h-screen flex items-center md:w-[550px] md:mt-16 z-10">
         <div className="p-10 lg:p-0">
           <div className="flex items-center justify-start">

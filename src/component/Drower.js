@@ -1,5 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v3.pdf";
+import { AiOutlineDownload } from "@react-icons/all-files/ai/AiOutlineDownload";
+import hasan from "../img/hasanWeb2.png"
 
 const Drower = () => {
   return (
@@ -8,21 +11,63 @@ const Drower = () => {
       <div class="drawer-content"></div>
       <div class="drawer-side">
         <label for="my-drawer-4" class="drawer-overlay"></label>
-        <ul class="menu p-4 overflow-y-auto w-80 text-base-content bb pt-32">
+        <ul class="menu p-4 overflow-y-auto w-80 text-base-content bb pt-32 text-white">
           <li>
-            <NavLink for="my-drawer-4" to="/home">
+          <label
+        
+        for="my-drawer-4"
+        class="mr-3 text-gray-400 md:hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="inline-block w-5 h-5 stroke-current"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </label>
+          </li>
+          <li>
+          <div className="img-holder mx-auto w-[150px]">
+              <img className="w-100 avatar" src={hasan} alt="" />
+            </div>
+          </li>
+          <li>
+            <a for="" href="#home">
               Home
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink to="/blogs">Blogs</NavLink>
+          <a for="" className="" href="#skill">
+            Skill
+          </a>
           </li>
           <li>
-            <NavLink to="/about">About</NavLink>
+          <a className="" href="#project1">
+            Project
+          </a>
           </li>
-            <button className="btn1 w-[200px] mt-10">
-              Download Resume
-            </button>
+          <li>
+          <a className="" href="#contact">
+            Contact
+          </a>
+          </li>
+          <li className="mt-10">
+          <a
+              className="btn1 cursor-pointer mx-auto mt-[-10px]"
+              download
+              href={resumePDF}
+            >
+              <AiOutlineDownload className="inline-block text-xl" /> Download
+            </a>
+          </li>
+
 
         </ul>
       </div>

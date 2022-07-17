@@ -66,7 +66,7 @@ const Header = () => {
           <img src={resume} alt="" />
           <div class="modal-action bg-fixed">
             <a
-              className="btn1 cursor-pointer mx-auto mt-[-10px]"
+              className="btn1 cursor-pointer  mt-[-10px]"
               download
               href={resumePDF}
             >
