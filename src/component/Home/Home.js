@@ -9,9 +9,9 @@ const LazyContact = React.lazy(()=> import('./Contact'));
 
 const Home = () => {
     return (
-        <div className="">
-            <ShowCase></ShowCase>
+        <div className="relative">
             <Drower></Drower>
+            <ShowCase></ShowCase>
             <Skills></Skills>
             <Suspense fallback={<div>Loading...</div>}>
             <LazyProject/>

@@ -4,17 +4,22 @@ import ProjectNew from "./ProjectNew";
 import arrow3 from "../../img/Asset 2@4x.png";
 import arrow4 from "../../img/Asset 5@4x.png";
 import arrow5 from "../../img/Asset 6@4x.png";
+import { useQuery } from 'react-query';
+import Loading from "../Loading";
 
 const MyProject = () => {
-  const [projects, setProjects] = useState([]);
-  const [project2, setProject2] = useState({});
-  console.log(projects);
 
-  useEffect(() => {
-    fetch("https://radiant-lake-65921.herokuapp.com/project")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
+  const [project2, setProject2] = useState({});
+
+  const { isLoading, error, data:projects } = useQuery('projects', () =>
+  fetch('https://radiant-lake-65921.herokuapp.com/project').then(res =>
+    res.json()
+  )
+)
+
+if (isLoading) return <Loading></Loading>
+
+
 
   return (
     <div id="project1" className="mx-auto container text-center mt-6">
@@ -26,11 +31,11 @@ const MyProject = () => {
         Projects.
       </h2>
       <div className="w-[100px] mx-auto relative">
-        <img className="absolute left-10 w-1/2 md:w-100" src={arrow3} alt="" />
-        <img className="absolute top-16 left-[150px] w-1/2 md:w-100" src={arrow4} alt="" />
-        <img className="absolute top-16 right-[200px] w-1/2 md:w-100" src={arrow5} alt="" />
+        <img className="absolute left-10" src={arrow3} alt="" />
+        <img className="absolute top-16 left-[150px]" src={arrow4} alt="" />
+        <img className="absolute top-16 right-[200px]" src={arrow5} alt="" />
         <img
-          className="absolute arrow-mirror top-16 right-20 w-1/2 md:w-100"
+          className="absolute arrow-mirror top-16 right-20"
           src={arrow3}
           alt=""
         />
