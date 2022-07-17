@@ -2,7 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v3.pdf";
 import { AiOutlineDownload } from "@react-icons/all-files/ai/AiOutlineDownload";
-import hasan from "../img/hasanWeb2.png"
+import hasan from "../img/hasanWeb2.png";
+import { BiHomeAlt } from "@react-icons/all-files/bi/BiHomeAlt";
+import { RiLightbulbFlashLine } from "@react-icons/all-files/ri/RiLightbulbFlashLine";
+import { AiOutlineFundProjectionScreen } from "@react-icons/all-files/ai/AiOutlineFundProjectionScreen";
+import { AiOutlineContacts } from "@react-icons/all-files/ai/AiOutlineContacts";
+
 
 const Drower = () => {
   return (
@@ -13,53 +18,37 @@ const Drower = () => {
         <label for="my-drawer-4" class="drawer-overlay"></label>
         <ul class="menu p-4 overflow-y-auto w-80 text-base-content bb pt-32 text-white">
           <li>
-          <label
-        
-        for="my-drawer-4"
-        class="mr-3 text-gray-400 md:hidden"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="inline-block w-5 h-5 stroke-current"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          ></path>
-        </svg>
-      </label>
+            <label for="my-drawer-4" class="mr-3 text-gray-400 md:hidden">
+              ✕
+            </label>
           </li>
           <li>
-          <div className="img-holder mx-auto w-[150px]">
+            <div className="img-holder mx-auto w-[150px]">
               <img className="w-100 avatar" src={hasan} alt="" />
             </div>
           </li>
           <li>
             <a for="" href="#home">
-              Home
+              <BiHomeAlt></BiHomeAlt> Home
             </a>
           </li>
           <li>
-          <a for="" className="" href="#skill">
-            Skill
-          </a>
+            <a for="" className="" href="#skill">
+              <RiLightbulbFlashLine></RiLightbulbFlashLine> Skill
+            </a>
           </li>
           <li>
-          <a className="" href="#project1">
-            Project
-          </a>
+            <a className="" href="#project1">
+             <AiOutlineFundProjectionScreen></AiOutlineFundProjectionScreen> Project
+            </a>
           </li>
           <li>
-          <a className="" href="#contact">
-            Contact
-          </a>
+            <a className="text-white" href="#contact">
+              <AiOutlineContacts></AiOutlineContacts> Contact
+            </a>
           </li>
           <li className="mt-10">
-          <a
+            <a
               className="btn1 cursor-pointer mx-auto mt-[-10px]"
               download
               href={resumePDF}
@@ -67,8 +56,6 @@ const Drower = () => {
               <AiOutlineDownload className="inline-block text-xl" /> Download
             </a>
           </li>
-
-
         </ul>
       </div>
     </div>
