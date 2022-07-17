@@ -7,8 +7,6 @@ import resume from "../img/Hasan_Mohammad_Web_Developer_v3 (1).png";
 import resumePDF from "../img/Hasan_Mohammad_Web_Developer_v3.pdf";
 
 const Header = () => {
-    const [menu, setMenu] = useState(true);
-
 
   return (
     <div className="nav">
@@ -21,7 +19,7 @@ const Header = () => {
             Home
           </NavLink>
           <a className="hidden md:block" href="#skill">
-            Skills
+            Skill
           </a>
           <a className="hidden md:block" href="#project1">
             Project
@@ -30,11 +28,17 @@ const Header = () => {
             Contact
           </a>
         </div>
-        <button className="btn1 bg-blue-700 hidden mr-1 md:block"><label for="my-modal-5" class=""><AiOutlineDownload className="inline-block text-xl"/> Resume</label>
-          
+        <button className="btn1 bg-blue-700 hidden mr-1 md:block">
+          <label for="my-modal-5" class="">
+            <AiOutlineDownload className="inline-block text-xl" /> Resume
+          </label>
         </button>
-        <label onClick={()=>{setMenu(!menu)}} for="my-drawer-4" class="mr-3 text-gray-400 md:hidden">
-            {menu?           <svg
+        <label
+        
+          for="my-drawer-4"
+          class="mr-3 text-gray-400 md:hidden"
+        >
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -46,22 +50,31 @@ const Header = () => {
               stroke-width="2"
               d="M4 6h16M4 12h16M4 18h16"
             ></path>
-          </svg> : <label for="my-modal-3" class="ml-3">✕</label>}
+          </svg>
         </label>
       </div>
 
-
-<input type="checkbox" id="my-modal-5" class="modal-toggle" />
-<div class="modal">
-  <div class="modal-box max-w-2xl">
-  <label for="my-modal-5" class="btn btn-sm btn-circle sticky right-2 top-2 bb">✕</label>
-    <img src={resume} alt="" />
-    <div class="modal-action bg-fixed">
-      <a className="btn1 mx-auto mt-[-10px]"download href={resumePDF}><AiOutlineDownload className="inline-block text-xl"/> Download</a>
-    </div>
-  </div>
-</div>
-
+      <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box max-w-2xl">
+          <label
+            for="my-modal-5"
+            class="btn btn-sm btn-circle sticky right-2 top-2 bb"
+          >
+            ✕
+          </label>
+          <img src={resume} alt="" />
+          <div class="modal-action bg-fixed">
+            <a
+              className="btn1 cursor-pointer mx-auto mt-[-10px]"
+              download
+              href={resumePDF}
+            >
+              <AiOutlineDownload className="inline-block text-xl" /> Download
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

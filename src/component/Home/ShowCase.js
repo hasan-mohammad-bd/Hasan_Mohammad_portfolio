@@ -9,6 +9,7 @@ import arrow2 from "../../img/Asset 3@4x.png";
 import { useState } from "react";
 import Loading from '../Loading';
 import Spline from "@splinetool/react-spline";
+import showcase from '../../img/showcase.png'
 
 
 
@@ -19,7 +20,7 @@ const ShowCase = () => {
   return (
     <div className="show-case text-white flex flex-col-reverse md:flex-row justify-between container mx-auto">
       <div className="w-100 h-screen flex items-center md:w-[550px] md:mt-16 z-10">
-        <div className="">
+        <div className="p-10 lg:p-0">
           <div className="flex items-center justify-start">
           <h6 className="hello md:text-[60px] text-3xl text-[#ffe600] static mr-[100px]">
             Hello,
@@ -56,7 +57,8 @@ const ShowCase = () => {
           </div>
         </div>
       </div>
-      <div className="spline-container relative">
+      <div className="lg:hidden"><img className='w-100 mx-auto mt-[120px]' src={showcase} alt="" /></div>
+      <div className="spline-container relative hidden lg:block">
         <div className="md:h-[800px] md:w-[700px] flex justify-center items-center absolute z-[20]">
           <div className=""><Loading></Loading></div>
         </div>

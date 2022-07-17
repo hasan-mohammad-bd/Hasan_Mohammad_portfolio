@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Drower = () => {
   return (
-    <div class="drawer drawer-end fixed z-40 top-[0px]">
+    <div class="drawer md:hidden drawer-end fixed z-40 top-[0px]">
       <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content"></div>
       <div class="drawer-side">
