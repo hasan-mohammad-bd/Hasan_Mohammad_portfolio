@@ -8,10 +8,10 @@ const ProjectNew = ({ project, setProject2, project2 }) => {
 
   // const {name, img, technology, Description, _id} = project;
   console.log(project._id);
-  // fetch(`https://radiant-lake-65921.herokuapp.com/project/${project._id}`)
+  // fetch(`https://kithen.onrender.com.railway.app/project/${project._id}`)
 
   useEffect(()=>{
-    fetch(`https://radiant-lake-65921.herokuapp.com/project/${project._id}`)
+    fetch(`https://kithen.onrender.com/project/${project._id}`)
     .then(res => res.json())
     .then(data => setProject2(data))
 

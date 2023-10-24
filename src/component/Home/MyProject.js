@@ -9,17 +9,17 @@ import Loading from "../Loading";
 
 const MyProject = () => {
 
-  const [project2, setProject2] = useState({});
+  const [project2, setProject2] = useState([]);
 
   const { isLoading, error, data:projects } = useQuery('projects', () =>
-  fetch('https://radiant-lake-65921.herokuapp.com/project').then(res =>
+  fetch('https://kithen.onrender.com/project').then(res =>
     res.json()
   )
 )
 
+
 if (isLoading) return <Loading></Loading>
-
-
+console.log(error);
 
   return (
     <div id="project1" className="mx-auto container text-center mt-6">
@@ -41,7 +41,7 @@ if (isLoading) return <Loading></Loading>
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 .span">
-        {projects.map((project) => (
+        {projects?.map((project) => (
           <ProjectNew
             project={project}
             key={project._id}

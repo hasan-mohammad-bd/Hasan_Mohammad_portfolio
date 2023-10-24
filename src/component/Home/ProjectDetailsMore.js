@@ -6,9 +6,10 @@ const ProjectDetailsMore = () => {
     const [project, setProject] = useState({});
     console.log(project);
     useEffect(()=>{
-        fetch(`https://radiant-lake-65921.herokuapp.com/project/${id}`)
+        fetch(`https://kithen.onrender.com/project/${id}`)
         .then(res => res.json())
         .then(data => setProject(data))
+        
 
     },[])
 
