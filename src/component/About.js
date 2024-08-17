@@ -7,7 +7,7 @@ const About = () => {
       <div class="hero-content flex-col lg:flex-row">
         <div class="avatar">
           <div class="w-[300px] rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            <img src={hasan} />
+            <img src={hasan} alt="" />
           </div>
         </div>
         <div className="md:ml-10">

@@ -1,0 +1,40 @@
+[debug] [2024-08-17T16:07:56.537Z] ----------------------------------------------------------------------
+[debug] [2024-08-17T16:07:56.543Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-17T16:07:56.544Z] CLI Version:   12.1.0
+[debug] [2024-08-17T16:07:56.544Z] Platform:      win32
+[debug] [2024-08-17T16:07:56.544Z] Node Version:  v20.11.0
+[debug] [2024-08-17T16:07:56.545Z] Time:          Sat Aug 17 2024 22:07:56 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-08-17T16:07:56.545Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-17T16:07:56.554Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-17T16:07:56.867Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-17T16:07:56.868Z] > authorizing via signed-in user (hasan.md.east@gmail.com)
+[debug] [2024-08-17T16:07:56.868Z] [iam] checking project hasan-mohammad for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-17T16:07:56.871Z] > refreshing access token with scopes: []
+[debug] [2024-08-17T16:07:56.873Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-17T16:07:56.873Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-17T16:07:57.261Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-08-17T16:07:57.262Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-17T16:07:57.263Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hasan-mohammad:testIamPermissions [none]
+[debug] [2024-08-17T16:07:57.263Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hasan-mohammad:testIamPermissions x-goog-quota-user=projects/hasan-mohammad
+[debug] [2024-08-17T16:07:57.263Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hasan-mohammad:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-17T16:07:57.618Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-17T16:07:57.618Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-17T16:07:59.033Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hasan-mohammad:testIamPermissions 401
+[debug] [2024-08-17T16:07:59.034Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hasan-mohammad:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-08-17T16:07:59.038Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-17T16:07:59.040Z] > refreshing access token with scopes: []
+[debug] [2024-08-17T16:07:59.042Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-17T16:07:59.042Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-17T16:07:59.190Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-08-17T16:07:59.191Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-17T16:07:59.192Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hasan-mohammad [none]
+[debug] [2024-08-17T16:07:59.804Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hasan-mohammad 401
+[debug] [2024-08-17T16:07:59.805Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hasan-mohammad {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-08-17T16:07:59.805Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-17T16:08:00.213Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project hasan-mohammad. Please make sure the project exists and your account has permission to access it.

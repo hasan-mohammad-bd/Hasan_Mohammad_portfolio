@@ -1,6 +1,6 @@
 import React from "react";
 import { SingleProjects } from "./components/SingleProjects";
-import MyProject from "../Home/MyProject";
+
 
 const projectData = [
   {
