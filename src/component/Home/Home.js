@@ -3,6 +3,7 @@ import Line from '../Line';
 import ShowCase from './ShowCase';
 import Drower from '../Drower';
 import Skills from './Skills';
+import Projects from '../projects';
 const LazyProject = React.lazy(() => import('./MyProject'));
 const LazyContact = React.lazy(()=> import('./Contact'));
 
@@ -12,10 +13,11 @@ const Home = () => {
         <div className="relative">
             <Drower></Drower>
             <ShowCase></ShowCase>
-            <Skills></Skills>
+            {/* <Skills></Skills> */}
             <Suspense fallback={<div>Loading...</div>}>
-            <LazyProject/>
-            <Line></Line>
+            <Projects/>
+            {/* <LazyProject/> */}
+            {/* <Line></Line> */}
             <LazyContact/>
             </Suspense>
 

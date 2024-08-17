@@ -23,13 +23,7 @@ console.log(error);
 
   return (
     <div id="project1" className="mx-auto container text-center mt-6">
-      <div class="sign">
-        <span class="sign__word">my</span>
-        <span class="sign__word">recent</span>
-      </div>
-      <h2 className="my-3 text-white projectText text-5xl text-[#ffe600]">
-        Projects.
-      </h2>
+
       <div className="w-[100px] mx-auto relative">
         <img className="absolute left-10" src={arrow3} alt="" />
         <img className="absolute top-16 left-[150px]" src={arrow4} alt="" />
