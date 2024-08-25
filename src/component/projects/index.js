@@ -32,13 +32,13 @@ const projectData = [
     img: "https://i.ibb.co/PD8cZbz/coludiakitchen.png",
   },
   {
-    title: "Cloudia Kitchen Accessories",
-    href: "https://www.pinkflashonline.com/",
-    heading: "Cloudia Kitchen Accessories",
-    description: "Its a wholesaler website for kitchen accessories.",
+    title: "Lazy Kow",
+    href: "https://lazykow.com/",
+    heading: "Lazy Kow",
+    description: "it's a leather product manufacturing company based in US",
     technology:
-      "React Js, Tailwind CSS, DaisyUI,Firebase Authentication, Node, MongoDB, Express Js, JWT Token, React Query, React hook form, Stripe",
-    img: "https://i.ibb.co/PD8cZbz/coludiakitchen.png",
+      "Next.js, Tailwind CSS, Vercel, Aceternity UI, Lottie Animation ",
+    img: "https://i.ibb.co/GMt6dpt/lazykow.png",
   },
 ];
 
@@ -51,7 +51,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-3 2xl:grid-cols-4">
         {projectData.map((project, index) => (
           <SingleProjects
             key={index}
